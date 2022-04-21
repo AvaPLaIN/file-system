@@ -1,0 +1,23 @@
+{
+  "name of file": {
+    "name": "name of file",
+    "type": "file",
+    "fileType": "txt"
+  },
+  "uni": {
+    "name": "uni",
+    "type": "directory",
+    "files": {
+      "name of file": {
+        "name": "name of file",
+        "type": "file",
+        "fileType": "txt"
+      },
+      "uni": {
+        "name": "uni",
+        "type": "directory",
+        "files": {}
+      }
+    }
+  }
+}
