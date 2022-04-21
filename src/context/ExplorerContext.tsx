@@ -4,7 +4,7 @@ import IExplorer from "./ExplorerContext.types";
 export const ExplorerContext = createContext({});
 
 const Explorer = ({ config, children }: IExplorer) => {
-  const [explorer, setExplorer] = useState(config);
+  const [explorer] = useState(config);
 
   // TODO - add a function to add a new file/Directory
   // TODO - add a function to delete a file/Directory
