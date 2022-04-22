@@ -70,5 +70,21 @@
         }
       }
     }
+  },
+  "rechnungen": {
+    "name": "Rechnungen",
+    "type": "directory",
+    "files": {
+      "rechnung1": {
+        "name": "Rechnung 1",
+        "type": "file",
+        "fileType": "pdf"
+      },
+      "rechnung2": {
+        "name": "Rechnung 2",
+        "type": "file",
+        "fileType": "pdf"
+      }
+    }
   }
 }
