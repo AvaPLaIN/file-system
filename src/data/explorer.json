@@ -1,99 +1,105 @@
 {
-  "name of file": {
-    "name": "name of file",
-    "type": "file",
-    "fileType": "txt"
-  },
-  "uni": {
-    "name": "University",
+  "root": {
+    "name": "Root",
     "type": "directory",
     "files": {
-      "immatrikulationsbescheinigung": {
-        "name": "Immatrikulationsbescheinigung",
+      "name of file": {
+        "name": "name of file",
         "type": "file",
-        "fileType": "pdf"
+        "fileType": "txt"
       },
-      "SoSe2020": {
-        "name": "SoSe2020",
+      "uni": {
+        "name": "University",
         "type": "directory",
         "files": {
-          "matheEins": {
-            "name": "Mathe 1",
+          "immatrikulationsbescheinigung": {
+            "name": "Immatrikulationsbescheinigung",
+            "type": "file",
+            "fileType": "pdf"
+          },
+          "SoSe2020": {
+            "name": "SoSe2020",
             "type": "directory",
             "files": {
-              "klausur": {
-                "name": "Klausur",
-                "type": "file",
-                "fileType": "pdf"
+              "matheEins": {
+                "name": "Mathe 1",
+                "type": "directory",
+                "files": {
+                  "klausur": {
+                    "name": "Klausur",
+                    "type": "file",
+                    "fileType": "pdf"
+                  }
+                }
+              },
+              "bwlEins": {
+                "name": "BWL 1",
+                "type": "directory",
+                "files": {
+                  "klausur": {
+                    "name": "Klausur",
+                    "type": "file",
+                    "fileType": "pdf"
+                  }
+                }
               }
             }
           },
-          "bwlEins": {
-            "name": "BWL 1",
+          "WiSe2021": {
+            "name": "WiSe2021",
             "type": "directory",
             "files": {
-              "klausur": {
-                "name": "Klausur",
-                "type": "file",
-                "fileType": "pdf"
+              "matheZwei": {
+                "name": "Mathe 2",
+                "type": "directory",
+                "files": {
+                  "klausur": {
+                    "name": "Klausur",
+                    "type": "file",
+                    "fileType": "pdf"
+                  }
+                }
+              },
+              "bwlZwei": {
+                "name": "BWL 2",
+                "type": "directory",
+                "files": {
+                  "klausur": {
+                    "name": "Klausur",
+                    "type": "file",
+                    "fileType": "pdf"
+                  }
+                }
               }
             }
           }
         }
       },
-      "WiSe2021": {
-        "name": "WiSe2021",
+      "rechnungen": {
+        "name": "Rechnungen",
         "type": "directory",
         "files": {
-          "matheZwei": {
-            "name": "Mathe 2",
-            "type": "directory",
-            "files": {
-              "klausur": {
-                "name": "Klausur",
-                "type": "file",
-                "fileType": "pdf"
-              }
-            }
+          "rechnung1": {
+            "name": "Rechnung 1",
+            "type": "file",
+            "fileType": "pdf"
           },
-          "bwlZwei": {
-            "name": "BWL 2",
-            "type": "directory",
-            "files": {
-              "klausur": {
-                "name": "Klausur",
-                "type": "file",
-                "fileType": "pdf"
-              }
-            }
+          "rechnung2": {
+            "name": "Rechnung 2",
+            "type": "file",
+            "fileType": "pdf"
+          },
+          "rechnung3": {
+            "name": "Rechnung 3",
+            "type": "file",
+            "fileType": "jpg"
+          },
+          "rechnung4": {
+            "name": "Rechnung 4",
+            "type": "file",
+            "fileType": "png"
           }
         }
-      }
-    }
-  },
-  "rechnungen": {
-    "name": "Rechnungen",
-    "type": "directory",
-    "files": {
-      "rechnung1": {
-        "name": "Rechnung 1",
-        "type": "file",
-        "fileType": "pdf"
-      },
-      "rechnung2": {
-        "name": "Rechnung 2",
-        "type": "file",
-        "fileType": "pdf"
-      },
-      "rechnung3": {
-        "name": "Rechnung 3",
-        "type": "file",
-        "fileType": "jpg"
-      },
-      "rechnung4": {
-        "name": "Rechnung 4",
-        "type": "file",
-        "fileType": "png"
       }
     }
   }
