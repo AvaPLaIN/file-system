@@ -1,0 +1,23 @@
+.file-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.file-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}

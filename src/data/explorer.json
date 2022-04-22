@@ -11,7 +11,7 @@
       "name of file": {
         "name": "name of file",
         "type": "file",
-        "fileType": "txt"
+        "fileType": "pdf"
       },
       "uni": {
         "name": "uni",

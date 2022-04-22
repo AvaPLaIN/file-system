@@ -1,0 +1,38 @@
+.directory-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.directory-info-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.directory-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.name {
+  flex: 1;
+}
+
+.directory-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.directory-files {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: 2rem;
+}
