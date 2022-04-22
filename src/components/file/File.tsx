@@ -4,6 +4,7 @@ import { GrDocumentTxt } from "react-icons/gr";
 import {
   AiOutlineFileUnknown,
   AiOutlineFilePdf,
+  AiOutlineFileImage,
   AiOutlineDelete,
 } from "react-icons/ai";
 import { BiMove } from "react-icons/bi";
@@ -13,19 +14,21 @@ const File = ({ item }: IFile) => {
   const fileTypeMap = {
     txt: GrDocumentTxt,
     pdf: AiOutlineFilePdf,
+    jpg: AiOutlineFileImage,
+    png: AiOutlineFileImage,
     default: AiOutlineFileUnknown,
   };
 
-  const Icon =
+  const FileTypeIcon =
     fileTypeMap[item.fileType as keyof typeof fileTypeMap] ||
     fileTypeMap["default"];
 
   return (
     <div className={styles["file-container"]}>
       <div className={styles["file-info"]}>
-        <Icon />
+        <FileTypeIcon />
         <p>{item?.name}</p>
-        <p>{item?.fileType}</p>
+        <p>.{item?.fileType}</p>
       </div>
       <div className={styles["file-controls"]}>
         <div className="preview">

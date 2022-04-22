@@ -5,18 +5,69 @@
     "fileType": "txt"
   },
   "uni": {
-    "name": "uni",
+    "name": "University",
     "type": "directory",
     "files": {
-      "name of file": {
-        "name": "name of file",
+      "immatrikulationsbescheinigung": {
+        "name": "Immatrikulationsbescheinigung",
         "type": "file",
         "fileType": "pdf"
       },
-      "uni": {
-        "name": "uni",
+      "SoSe2020": {
+        "name": "SoSe2020",
         "type": "directory",
-        "files": {}
+        "files": {
+          "matheEins": {
+            "name": "Mathe 1",
+            "type": "directory",
+            "files": {
+              "klausur": {
+                "name": "Klausur",
+                "type": "file",
+                "fileType": "pdf"
+              }
+            }
+          },
+          "bwlEins": {
+            "name": "BWL 1",
+            "type": "directory",
+            "files": {
+              "klausur": {
+                "name": "Klausur",
+                "type": "file",
+                "fileType": "pdf"
+              }
+            }
+          }
+        }
+      },
+      "WiSe2021": {
+        "name": "WiSe2021",
+        "type": "directory",
+        "files": {
+          "matheZwei": {
+            "name": "Mathe 2",
+            "type": "directory",
+            "files": {
+              "klausur": {
+                "name": "Klausur",
+                "type": "file",
+                "fileType": "pdf"
+              }
+            }
+          },
+          "bwlZwei": {
+            "name": "BWL 2",
+            "type": "directory",
+            "files": {
+              "klausur": {
+                "name": "Klausur",
+                "type": "file",
+                "fileType": "pdf"
+              }
+            }
+          }
+        }
       }
     }
   }
