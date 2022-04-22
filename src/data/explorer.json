@@ -84,6 +84,16 @@
         "name": "Rechnung 2",
         "type": "file",
         "fileType": "pdf"
+      },
+      "rechnung3": {
+        "name": "Rechnung 3",
+        "type": "file",
+        "fileType": "jpg"
+      },
+      "rechnung4": {
+        "name": "Rechnung 4",
+        "type": "file",
+        "fileType": "png"
       }
     }
   }
