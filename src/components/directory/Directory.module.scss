@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  svg {
+    font-size: 1.4rem;
+  }
 }
 
 .directory-info-bar {

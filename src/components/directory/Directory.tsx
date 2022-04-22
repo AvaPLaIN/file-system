@@ -7,6 +7,8 @@ import {
   AiFillFolder,
   AiFillFolderOpen,
   AiOutlineDelete,
+  AiFillFileAdd,
+  AiFillFolderAdd,
 } from "react-icons/ai";
 import { BiMove } from "react-icons/bi";
 
@@ -27,6 +29,12 @@ const Directory = ({ item }: IDirectory) => {
           <p className={styles["name"]}>{item.name}</p>
         </div>
         <div className={styles["directory-controls"]}>
+          <div className="add-file">
+            <AiFillFileAdd />
+          </div>
+          <div className="add-directory">
+            <AiFillFolderAdd />
+          </div>
           <div className="move">
             <BiMove />
           </div>
