@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   AiOutlineDelete,
   AiOutlineEdit,
@@ -9,10 +9,13 @@ import {
 import { BiCheck, BiMove } from "react-icons/bi";
 import { GrDocumentTxt } from "react-icons/gr";
 import { MdOutlineClose, MdOutlinePreview } from "react-icons/md";
+import { ExplorerContext } from "../../context/ExplorerContext";
 import styles from "./File.module.scss";
 import IFile from "./File.types";
 
 const File = ({ item, objectPath }: IFile) => {
+  const { handleRename }: any = useContext(ExplorerContext);
+
   const [isEditing, setIsEditing] = useState(false);
   const [fileName, setFileName] = useState(item?.name);
 
@@ -36,8 +39,7 @@ const File = ({ item, objectPath }: IFile) => {
 
   const handleSaveFileName = () => {
     setIsEditing(false);
-    console.log("objectPath", objectPath);
-    // TODO save file name
+    handleRename(objectPath, fileName);
   };
 
   return (

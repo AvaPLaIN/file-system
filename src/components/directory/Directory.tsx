@@ -46,7 +46,7 @@ const Directory = ({ item, objectPath }: IDirectory) => {
       {isDirectoryOpen && (
         <div className={styles["directory-files"]}>
           {Object.entries(item?.files).map(([key, value]: any) => {
-            const enhancedObjectPath = `${objectPath}.${key}`;
+            const enhancedObjectPath = `${objectPath}.files.${key}`;
 
             return (
               <Controller

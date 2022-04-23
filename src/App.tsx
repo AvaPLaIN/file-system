@@ -3,7 +3,8 @@ import Controller from "./components/controller/Controller";
 import { ExplorerContext } from "./context/ExplorerContext";
 
 function App() {
-  const explorer = useContext(ExplorerContext);
+  // TODO - adjust the type of the context
+  const { explorer }: any = useContext(ExplorerContext);
 
   return (
     <div className="file-system">
