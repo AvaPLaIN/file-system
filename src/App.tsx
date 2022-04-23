@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="file-system">
       {Object.entries(explorer).map(([key, value]: any) => {
-        return <Controller key={key} item={value} />;
+        const objectPath = key;
+        return <Controller key={key} item={value} objectPath={objectPath} />;
       })}
     </div>
   );

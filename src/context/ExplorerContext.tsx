@@ -10,6 +10,7 @@ const Explorer = ({ config, children }: IExplorer) => {
   // TODO - add a function to delete a file/Directory
   // TODO - add a function to move files/Directory
   // TODO - add a function to rename files/Directory
+  const handleRename = (objectPath: string, value: string) => {};
 
   return (
     <ExplorerContext.Provider value={explorer}>

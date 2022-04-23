@@ -2,7 +2,7 @@ import Directory from "../directory/Directory";
 import File from "../file/File";
 import IController from "./Controller.types";
 
-const Controller = ({ item }: IController) => {
+const Controller = ({ item, objectPath }: IController) => {
   const typeMap = {
     file: File,
     directory: Directory,
@@ -12,7 +12,7 @@ const Controller = ({ item }: IController) => {
 
   return (
     <>
-      <Component item={item as any} />
+      <Component item={item as any} objectPath={objectPath} />
     </>
   );
 };

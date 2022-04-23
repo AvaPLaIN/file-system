@@ -12,7 +12,7 @@ import { MdOutlineClose, MdOutlinePreview } from "react-icons/md";
 import styles from "./File.module.scss";
 import IFile from "./File.types";
 
-const File = ({ item }: IFile) => {
+const File = ({ item, objectPath }: IFile) => {
   const [isEditing, setIsEditing] = useState(false);
   const [fileName, setFileName] = useState(item?.name);
 
@@ -36,7 +36,7 @@ const File = ({ item }: IFile) => {
 
   const handleSaveFileName = () => {
     setIsEditing(false);
-
+    console.log("objectPath", objectPath);
     // TODO save file name
   };
 

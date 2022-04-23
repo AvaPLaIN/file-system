@@ -12,7 +12,7 @@ import Controller from "../controller/Controller";
 import styles from "./Directory.module.scss";
 import IDirectory from "./Directory.types";
 
-const Directory = ({ item }: IDirectory) => {
+const Directory = ({ item, objectPath }: IDirectory) => {
   const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
 
   const handleToggleDirectoryOpen = () => setIsDirectoryOpen((prev) => !prev);
@@ -46,7 +46,15 @@ const Directory = ({ item }: IDirectory) => {
       {isDirectoryOpen && (
         <div className={styles["directory-files"]}>
           {Object.entries(item?.files).map(([key, value]: any) => {
-            return <Controller key={key} item={value} />;
+            const enhancedObjectPath = `${objectPath}.${key}`;
+
+            return (
+              <Controller
+                key={key}
+                item={value}
+                objectPath={enhancedObjectPath}
+              />
+            );
           })}
         </div>
       )}
