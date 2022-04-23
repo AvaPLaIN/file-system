@@ -38,7 +38,9 @@ const Directory = ({ item, objectPath }: IDirectory) => {
     handleRename(objectPath, directoryName);
   };
 
-  // TODO - do not change "isEditing" State when clicking on input field
+  const handleStopPropagation = (event: any) => {
+    event.stopPropagation();
+  };
 
   return (
     <div className={styles["directory-container"]}>
@@ -50,7 +52,10 @@ const Directory = ({ item, objectPath }: IDirectory) => {
           {isDirectoryOpen ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
           {isDirectoryOpen ? <AiFillFolderOpen /> : <AiFillFolder />}
           {isEditing ? (
-            <>
+            <div
+              className={styles["directory-edit"]}
+              onClick={handleStopPropagation}
+            >
               <input
                 type="text"
                 value={directoryName}
@@ -58,7 +63,7 @@ const Directory = ({ item, objectPath }: IDirectory) => {
               />
               <MdOutlineClose onClick={handleStopEditing} />
               <BiCheck onClick={handleSaveDirectoryName} />
-            </>
+            </div>
           ) : (
             <p className={styles["name"]}>{item.name}</p>
           )}

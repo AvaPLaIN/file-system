@@ -8,8 +8,6 @@
   }
 }
 
-// TODO - adjust styles for folder
-
 .directory-info-bar {
   background-color: rgba(0, 0, 0, 0.1);
   height: 2.2rem;
@@ -21,6 +19,13 @@
 
 .directory-info {
   flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.directory-edit {
   display: flex;
   align-items: center;
   gap: 1rem;
