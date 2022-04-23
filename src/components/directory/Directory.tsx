@@ -38,9 +38,7 @@ const Directory = ({ item, objectPath }: IDirectory) => {
     handleRename(objectPath, directoryName);
   };
 
-  const handleStopPropagation = (event: any) => {
-    event.stopPropagation();
-  };
+  const handleStopPropagation = (event: any) => event.stopPropagation();
 
   return (
     <div className={styles["directory-container"]}>
