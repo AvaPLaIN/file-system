@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { createContext, useState } from "react";
 import IExplorer from "./ExplorerContext.types";
 
 export const ExplorerContext = createContext({});

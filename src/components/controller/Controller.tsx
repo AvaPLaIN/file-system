@@ -1,6 +1,6 @@
-import IController from "./Controller.types";
-import File from "../file/File";
 import Directory from "../directory/Directory";
+import File from "../file/File";
+import IController from "./Controller.types";
 
 const Controller = ({ item }: IController) => {
   const typeMap = {

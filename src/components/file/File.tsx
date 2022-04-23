@@ -1,14 +1,14 @@
-import IFile from "./File.types";
-import styles from "./File.module.scss";
-import { GrDocumentTxt } from "react-icons/gr";
 import {
-  AiOutlineFileUnknown,
-  AiOutlineFilePdf,
-  AiOutlineFileImage,
   AiOutlineDelete,
+  AiOutlineFileImage,
+  AiOutlineFilePdf,
+  AiOutlineFileUnknown,
 } from "react-icons/ai";
 import { BiMove } from "react-icons/bi";
+import { GrDocumentTxt } from "react-icons/gr";
 import { MdOutlinePreview } from "react-icons/md";
+import styles from "./File.module.scss";
+import IFile from "./File.types";
 
 const File = ({ item }: IFile) => {
   const fileTypeMap = {

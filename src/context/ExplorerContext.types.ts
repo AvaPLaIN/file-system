@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { File, Directory } from "../types/explorer";
+import { Directory, File } from "../types/explorer";
 
 export default interface IExplorer {
   config: {

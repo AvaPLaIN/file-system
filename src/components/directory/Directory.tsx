@@ -1,16 +1,16 @@
 import { useState } from "react";
-import IDirectory from "./Directory.types";
-import Controller from "../controller/Controller";
-import styles from "./Directory.module.scss";
-import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import {
+  AiFillFileAdd,
   AiFillFolder,
+  AiFillFolderAdd,
   AiFillFolderOpen,
   AiOutlineDelete,
-  AiFillFileAdd,
-  AiFillFolderAdd,
 } from "react-icons/ai";
 import { BiMove } from "react-icons/bi";
+import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
+import Controller from "../controller/Controller";
+import styles from "./Directory.module.scss";
+import IDirectory from "./Directory.types";
 
 const Directory = ({ item }: IDirectory) => {
   const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);

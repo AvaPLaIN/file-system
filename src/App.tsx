@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ExplorerContext } from "./context/ExplorerContext";
 import Controller from "./components/controller/Controller";
+import { ExplorerContext } from "./context/ExplorerContext";
 
 function App() {
   const explorer = useContext(ExplorerContext);
